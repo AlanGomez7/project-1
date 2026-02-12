@@ -1,34 +1,43 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
+/* WRAPPER */
 .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 400px;
-  padding: 20px;
+  gap: 40px;
+  padding: 40px 20px; /* better mobile spacing */
 }
 
+/* PRODUCT FORM */
 .product-form {
   border: 2px solid #000;
   padding: 25px;
   display: flex;
+  width: 100%;
+  max-width: 400px;
   flex-direction: column;
   gap: 18px;
 }
 
 .product-form h2 {
-  margin: 0 0 10px 0;
   text-align: center;
   letter-spacing: 1px;
 }
 
+/* FORM GROUP */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -42,6 +51,7 @@ label {
 
 input,
 textarea {
+  width: 100%; /* makes fully responsive */
   padding: 10px;
   border: 1px solid #000;
   background-color: #fff;
@@ -56,10 +66,11 @@ textarea:focus {
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
   min-height: 80px;
 }
 
+/* BUTTON */
 .submit-btn {
   padding: 12px;
   background-color: #000;
@@ -75,10 +86,68 @@ textarea {
   background-color: #333;
 }
 
-.err{
+/* ERROR */
+.err {
   display: none;
-  color:red;
-  padding: 0;
-  margin: 0;
-  font-size: 9px;
+  color: red;
+  font-size: 11px;
+}
+
+/* NAVBAR */
+nav {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* CARD */
+.card-box {
+  display: flex;
+  gap: 30px;
+  border: 2px solid #000;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  align-items: center;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+
+
+  .card-name{
+    font-size: 12px;
+    padding: 0;
+  }
+
+
+  .product-form {
+    padding: 20px;
+  }
+
+  nav {
+    padding: 12px 15px;
+  }
+
 }

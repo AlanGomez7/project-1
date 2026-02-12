@@ -49,6 +49,7 @@ a {
 .card-title {
     font-size: 14px;
     font-weight: 600;
+    color:#111111
 }
 
 .description {
@@ -90,4 +91,3 @@ main {
 .price{
     color:black;
 }
-

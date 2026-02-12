@@ -3,12 +3,9 @@ const product = params.get('product');
 const username = params.get('username');
 const email = params.get('email');
 const phone = params.get('phone')
-const price = params.get('params');
-
-console.log(product, username, email, phone, price)
+const price = params.get('price');
 
 const container = document.getElementById("order-details");
-console.log(container)
 container.innerHTML = `
       <p><strong>Customer:</strong> ${username}</p>
       <p><strong>Phone:</strong> ${phone}</p>
