@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <form class="product-form" id="enquiry-form">
+            <h2>Add Product</h2>
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" placeholder="Nike Air Max 270" readonly required id="product-name" name="product" />
+            </div>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="John doe" id="name" name="username" />
+                <p id="user-err" class="err"></p>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input name="email" type="email" placeholder="johndoe@nike.co" id="email" />
+                <p id="email-err" class="err"></p>
+            </div>
+
+            <div class="form-group">
+                <label>Phone no</label>
+                <input name="phone" type="text" placeholder="+91 999 0 88 67 98" id="phone" />
+                <p id="phone-err" class="err"></p>
+            </div>
+
+            <input name="price" type="text" hidden />
+
+            <button type="submit" class="submit-btn">Add Product</button>
+        </form>
+    </div>
+
+    <script src="form.js" type="module"></script>
+</body>
+
+</html>

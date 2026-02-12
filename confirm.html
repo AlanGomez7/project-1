@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Confirmation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .confirmation-wrapper {
+      border: 2px solid #000;
+      padding: 30px 40px;
+      max-width: 500px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .order-detail {
+      border-top: 1px solid #000;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+
+    .order-detail strong {
+      display: inline-block;
+      width: 120px;
+    }
+
+    .thank-you {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="confirmation-wrapper">
+    <h1>Order Confirmation</h1>
+    <div class="order-detail" id="order-details">
+      <!-- Order details will be injected here -->
+    </div>
+    <p class="thank-you">Thank you for your order</p>
+  </div>
+  <script src="confirm.js"></script>
+</body>
+</html>
